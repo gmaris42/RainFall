@@ -3,8 +3,8 @@ get the binary on host
 
 decompile using ghidra\
 main fonction is
-```
-	undefined4 main(undefined4 param_1,int param_2)
+```c
+	int main(undefined4 param_1,int param_2)
 	{
 		int iVar1;
 		undefined4 local_20;

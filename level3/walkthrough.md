@@ -9,7 +9,7 @@ When we disasemble the main function, we can see the main call a v() function
 
  in c does this:
 
-```
+```c
 unsigned int m;
 
 void v(void)

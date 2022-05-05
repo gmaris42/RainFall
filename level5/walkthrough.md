@@ -2,24 +2,24 @@ get the binary on host
 * scp -P 4242 level5@192.168.56.107:./level5 ./binary/level5
 
 decompile using ghidras
-```
-08048504	void main(void)
+```c
+/*08048504*/void main(void)
 			{
 				n();
 				return;
 			}
 
-080484c2	void n(void)
+/*080484c2*/void n(void)
 			{
 				undefined local_20c [520];
 			
 				fgets(local_20c,512,stdin);
 				printf(local_20c);
-080484f8		
+/*080484f8*/		
 				exit(1);
 			}
 
-080484a4	void o(void)
+/*080484a4*/void o(void)
 			{
 				system("/bin/sh");
 				exit(1);

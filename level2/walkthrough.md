@@ -4,7 +4,7 @@ get the binary on host
 decompile using ghidra
 
 we can use a buffer overflow to run a sh, but we can't pass hexa starting at \xbZ (no Z is valide)
-```
+```c
 	void p(void)
 	{
 		uint unaff_retaddr;

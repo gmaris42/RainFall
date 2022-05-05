@@ -2,7 +2,7 @@ get the binary on host
 * `scp -P 4242 level4@192.168.56.107:./level4 ./binary/level4`
 
 decompile using ghidra
-```
+```c
 	unsigned int m;
 
 	void main(void)

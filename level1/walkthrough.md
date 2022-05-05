@@ -3,7 +3,7 @@ get the binary on host
 
 decompile using ghidra\
 main fonction is
-```
+```c
 	void main(void)
 	{
 		undefined local_50 [76];
@@ -13,7 +13,7 @@ main fonction is
 	}
 ```
 and this fonction exist too 
-```
+```c
 	void run(void)
 
 	{
