@@ -30,7 +30,7 @@ decompile using ghidras
 
 We need addr of `o()`, `exit()`, `the offset of the string` 
 * o addr ====> 0x0804 84a4
-* exit addr => 0x08 04 98 38
+* exit addr => 0x08 04 98 38 (using objdump -R)
 * By trying we get an off set of 4
 
 str => `addr exit`\

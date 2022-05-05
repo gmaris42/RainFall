@@ -25,7 +25,7 @@ we can use a buffer overflow to run a sh, but we can't pass hexa starting at \xb
 To bypass the check, we will add the address of return of function before our payload
 * `/bin/sh`	=> 0xb7 f8 cc 58
 * `system`	=> 0xb7 e6 b0 60
-* `exit`    =>  0xb7 e5 eb e0
+* `exit`    => 0xb7 e5 eb e0
 * `p ret`   => 0x08 04 85 3e
 
 Using our 80 char array + thoose address we can lauch a new shell.\
