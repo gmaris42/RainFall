@@ -1,8 +1,7 @@
 get the binary on host
 * `scp -P 4242 level1@192.168.56.107:./level1 ./binary/level1`
 
-decompile using ghidra\
-main fonction is
+decompile using ghidra
 ```c
 	void main(void)
 	{
@@ -11,9 +10,6 @@ main fonction is
 		gets(local_50);
 		return;
 	}
-```
-and this fonction exist too 
-```c
 	void run(void)
 
 	{

