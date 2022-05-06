@@ -1,5 +1,5 @@
 get the binary on host
-* scp -P 4242 level5@192.168.56.107:./level5 ./binary/level5
+* `scp -P 4242 level7@192.168.56.107:./level7 ./binary/level7`
 
 decompile using ghidras
 ```c
