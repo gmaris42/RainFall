@@ -6,7 +6,7 @@ void v(void)
   
   fgets(buffer,520,stdin);
   printf("%s", buffer);
-  if (m == 0x40)    --> 64 in decimal
+  if (m == 64)
   {
     fwrite("Wait what?!\n",1,stdout);
     system("/bin/sh");

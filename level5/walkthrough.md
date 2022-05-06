@@ -29,9 +29,9 @@ decompile using ghidras
 `https://axcheron.github.io/exploit-101-format-strings/` <= learn to do a GOT Overwrite
 
 We need addr of `o()`, `exit()`, `the offset of the string` 
-* o addr ====> 0x0804 84a4
+* o addr ====> 0x0804 84a4 ====> 134513828 in decimal
 * exit addr => 0x08 04 98 38 (using objdump -R)
-* By trying we get an off set of 4
+* By trying we get an offset of 4
 
 str => `addr exit` + nb_chr %offset$n\
 

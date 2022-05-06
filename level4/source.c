@@ -8,7 +8,7 @@
 
 	void n(void)
 	{
-		undefined local_20c [520];
+		char local_20c [520];
 		
 		fgets(local_20c,512,stdin);
 		p(local_20c);
@@ -18,7 +18,7 @@
 		return;
 	}
 
-	void p(undefined4 param_1)
+	void p(char *param_1)
 	{
 		printf(param_1);
 		return;

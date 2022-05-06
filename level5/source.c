@@ -6,7 +6,7 @@ void main(void)
 
 void n(void)
 {
-	undefined local_20c [520];
+	char local_20c [520];
 
 	fgets(local_20c,512,stdin);
 	printf(local_20c);

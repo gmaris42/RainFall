@@ -1,12 +1,12 @@
 	void p(void)
 	{
-		uint unaff_retaddr;
-		undefined local_50 [76];
+		uint var;
+		char local_50 [76];
 		
 		fflush(stdout);
 		gets(local_50)
-		if ((unaff_retaddr & 0xb0000000) == 0xb0000000) {
-			printf("(%p)\n",unaff_retaddr);
+		if ((var & 0xb0000000) == 0xb0000000) {
+			printf("(%p)\n", var);
 							/* WARNING: Subroutine does not return */
 			_exit(1);
 		}

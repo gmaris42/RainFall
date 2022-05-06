@@ -29,7 +29,7 @@ main fonction is
 	}
 ```
 0x1a7 is 423 in decimal\
-So we can execute level0 with 423 as param and it will execv abash with level1 permission.
+So we can execute level0 with 423 as param and it will execv a bash with level1 permission.
 ```
 $ ./level0 423
 $ whoami

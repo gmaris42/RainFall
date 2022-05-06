@@ -127,7 +127,7 @@ The only usefull input are:
 * `'login'`
 
 But reset won't be use here.\
-When you input auth or service, a pointer increment.\
+When you input auth or service, a pointer increment by 16.\
 When you input login, the 2 pointer are compare
 
 By trying, inputing `'auth '`, `'service'`, `'service'` we can then do a `'login'` and get a ssh as level9
