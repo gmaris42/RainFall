@@ -1,8 +1,8 @@
 	void main(void)
 	{
-		char	local_50 [76];
+		char buffer[76];
 		
-		gets(local_50);
+		gets(buffer);
 		return;
 	}
 	void run(void)

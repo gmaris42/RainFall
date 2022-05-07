@@ -6,11 +6,10 @@ void main(void)
 
 void n(void)
 {
-	char local_20c [520];
+	char buffer[520];
 
-	fgets(local_20c,512,stdin);
-	printf(local_20c);
-
+	fgets(buffer, 512, stdin);
+	printf("%s", buffer);
 	exit(1);
 }
 

@@ -8,18 +8,18 @@
 
 	void n(void)
 	{
-		char local_20c [520];
+		char buffer[520];
 		
-		fgets(local_20c,512,stdin);
-		p(local_20c);
+		fgets(buffer, 512,,stdin);
+		p(buffer);
 		if (m == 16930116) {
 			system("/bin/cat /home/user/level5/.pass");
 		}
 		return;
 	}
 
-	void p(char *param_1)
+	void p(char *str)
 	{
-		printf(param_1);
+		printf("%s", str);
 		return;
 	}

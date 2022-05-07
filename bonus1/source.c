@@ -7,7 +7,6 @@ int main(int ac,char **av)
   if (nb < 10)
   {
     memcpy(buff, argv[2], nb * 4);
-
     if (nb == 1464814662)
       execl("/bin/sh", "sh", 0);
     return 0;
